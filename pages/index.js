@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 export default function Home() {
 	return (
@@ -6,10 +7,7 @@ export default function Home() {
 			<Header />
 
 			<main>
-				<div>
-					<h1>CUBE</h1>
-					<p>アウトプットしていくサイト</p>
-				</div>
+				<Hero />
 			</main>
 
 			<footer>FOOTER</footer>
