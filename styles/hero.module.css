@@ -18,12 +18,12 @@
 }
 
 /* image */
-/* .image {
-  width: 100%;
+.image {
+	width: 100%;
 }
 
 @media (min-width: 768px) {
-  .image {
-    width: 50%;
-  }
-} */
+	.image {
+		width: 50%;
+	}
+}
