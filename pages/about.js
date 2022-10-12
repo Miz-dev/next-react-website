@@ -14,7 +14,7 @@ import Meta from "components/meta";
 export default function About() {
 	return (
 		<Container>
-			<Meta pageTitle="アバウト" />
+			<Meta pageTitle="アバウト" pageDesc="About development activities" />
 
 			<Hero title="About" subtitle="About development activities" />
 
