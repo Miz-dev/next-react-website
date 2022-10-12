@@ -13,12 +13,13 @@ const {
 } = siteMeta;
 
 export default function Meta({ pageTitle }) {
+	// ページのタイトル
+	const title = pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle;
+
 	return (
 		<Head>
-			<title>
-				{pageTitle} | {siteTitle}
-			</title>
-			<meta property="og:title" content={`${pageTitle} | ${siteTitle}`} />
+			<title>{title}</title>
+			<meta property="og:title" content={title} />
 		</Head>
 	);
 }
