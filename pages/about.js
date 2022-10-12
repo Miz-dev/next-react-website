@@ -9,10 +9,15 @@ import {
 } from "components/TwoColumn";
 import Image from "next/image";
 import eyecatch from "images/about.jpg";
+import Head from "next/head";
 
 export default function About() {
 	return (
 		<Container>
+			<Head>
+				<title>アバウト</title>
+			</Head>
+
 			<Hero title="About" subtitle="About development activities" />
 
 			<figure>
