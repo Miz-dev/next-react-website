@@ -1,5 +1,5 @@
 import { getPostBySlug } from "lib/api";
-import { Container } from "components/Container";
+import Container from "components/Container";
 import PostHeader from "components/PostHeader";
 import Image from "next/image";
 
@@ -17,7 +17,7 @@ export default function Schedule({
 
 				<figure>
 					<Image
-						src={eyecatch}
+						src={eyecatch.url}
 						alt=""
 						layout="responsive"
 						width={eyecatch.width}
