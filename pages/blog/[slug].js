@@ -15,6 +15,7 @@ import Meta from "components/Meta";
 import { eyecatchLocal } from "lib/constants";
 import { getPlaiceholder } from "plaiceholder";
 import { prevNextPost } from "lib/prevNextPost";
+import Pagination from "components/pagination";
 
 export default function Post({
 	title,
@@ -62,12 +63,12 @@ export default function Post({
 						<PostCategories categories={categories} />
 					</TwoColumnSidebar>
 				</TwoColumn>
-				<div>
-					{prevPost.title} {prevPost.slug}
-				</div>
-				<div>
-					{nextPost.title} {nextPost.slug}
-				</div>
+				<Pagination
+					prevText={prevPost.title}
+					prevUrl={`/blog/${prevPost.slug}`}
+					nextText={nextPost.title}
+					nextUrl={`/blog/${nextPost.slug}`}
+				/>
 			</article>
 		</Container>
 	);
