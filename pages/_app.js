@@ -10,7 +10,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
 	const router = useRouter();
 	useEffect(() => {
 		const handleRouteChange = (url) => {
@@ -45,6 +45,6 @@ function MyApp({ Component, pageProps }) {
 			</Layout>
 		</>
 	);
-}
+};
 
 export default MyApp;
